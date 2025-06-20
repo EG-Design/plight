@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/plightcss.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ayr5udo.css" />
+    <link rel="icon" href="images/plightIcon.ico" />
+    <title>Plight-Index</title>
+  </head>
+  <body class="crt" onload="move()" ;>
+    <header>
+      <a href="index.html">INDEX</a>
+    </header>
+    <main class="centerdiv">
+        <!--Logo-->
+        <img src="images/Logo.svg" alt="Logo" width="300px" />
+        <!--Loading Bar-->
+        <div class="loadingdiv">
+          <div class="loadingbar" id="loadingbar"></div>
+        </div>
+        <!--Text Write In-->
+        <div class="typewriter-text-div typewriter-text">
+          <p>RENDERING OVERLAY...</p>
+          <p>SYSTEM SETUP IN PROGRESS</p>
+          <p>STARTUP SUCESSFUL</p>
+        </div>
+    </main>
+    <script>
+      var timer = setTimeout(function () {
+        window.location = "databank.html";
+      }, 8000);
+    </script>
+    <script src="script/document.js"></script>
+  </body>
+</html>
