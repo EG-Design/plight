@@ -1,11 +1,15 @@
-document.addEventListener('invalid', (function () {
+document.addEventListener(
+  "invalid",
+  (function () {
     return function (e) {
       e.preventDefault();
       document.getElementsByTagName("input").focus();
     };
-  })(), true);
+  })(),
+  true
+);
 
-  var i = 0;
+var i = 0;
 function move() {
   if (i == 0) {
     i = 1;
@@ -24,6 +28,15 @@ function move() {
   }
 }
 
-function login() {
-  const password = document.getElementById('password')
-}
+// Overview Password Function
+
+    function overviewlogin() {
+      const correctPassword = "mySecret123";
+      const input = document.getElementById("overview-password").value;
+
+      if (input === correctPassword) {
+        window.location.href = "https://example.com";
+      } else {
+        alert("Incorrect password. Please try again.");
+      }
+    }
