@@ -31,9 +31,9 @@
             Data cell [GOOD] - base data, no concern unless update on [RHUNE]
             can be confirmed.
           </p>
-          <form onsubmit="overviewlogin()">
+          <form onsubmit="overviewlogin(event)">
             <button type="submit">CONFIRM</button>
-            <input type="password" id="overview-password"/>
+            <input type="password" id="overview-password" />
           </form>
         </div>
         <!--Universe Card-->
@@ -43,9 +43,9 @@
             Data cell [GOOD] - outside sources refer to unknown construct
             [RHUNE]. More Data required, breach if necessary.
           </p>
-          <form action="3790572-universe.html" method="post">
+          <form onsubmit="universelogin(event)">
             <button type="submit">CONFIRM</button>
-            <input type="password" id="password" required pattern="3790572" />
+            <input type="password" id="universe-password" />
           </form>
         </div>
         <!--Factions Card-->
@@ -54,9 +54,9 @@
           <p>
             Data cell [GOOD] - logistics in good standing, do not intercept.
           </p>
-          <form action="8915534-factions.html" method="post">
+          <form onsubmit="factionslogin(event)">
             <button type="submit">CONFIRM</button>
-            <input type="password" id="factions-password" required pattern="8915534" />
+            <input type="password" id="factions-password" />
           </form>
         </div>
         <!--Map Card-->
@@ -66,21 +66,21 @@
             Data cell [WARNING FALSE CORE] - false core warning disregard, black
             hole reassembling data to 2nd cruiser.
           </p>
-          <form action="#" method="post">
+          <form form onsubmit="maplogin(event)">
             <button type="submit">CONFIRM</button>
-            <input type="password" id="map-password" required pattern="#" />
+            <input type="password" id="map-password" />
           </form>
         </div>
-        <!--[]II[II][[]] Card-->
+        <!-- Corrupt Card-->
         <div class="card">
           <h2 class="l-text">[]II[II][[]]:</h2>
           <p>
-            []]II[]] [Ċ̶̢̥̬̬͎̹̭̏͜ͅO̸̡̧̬͎̻̼̘̙̔̒͋̔̽ͅR̴̡̙̱̦̣̓̇̄̓̊́̂̌̈́R̷̢̬̩̲̗̯͚̱̓̂U̸͓̙̦͆̆͊̕P̵̛̟̳͕͊̀̏͗͒͘T̷̤͉̗̪͎͌͊͝ͅ] - III[]]II]][[II]] Ḑ̴̨̦̟̖̜̺̥͈̀̊Ȩ̸͓̪͕͉̰̣͓͋̾L̷̻̤̤̪̞͐E̸̯͓̞̫̲͙̙̘̫̳͆̓͝T̶̹̦̳̭̳̪̂͐͗̕E̶̢̯̯̼͕̪̜͕͝ []]]]II ][[II]
-            ]][[II] I]I[]].
+            []]II[]] [Ċ̶̢̥̬̬͎̹̭̏͜ͅO̸̡̧̬͎̻̼̘̙̔̒͋̔̽ͅR̴̡̙̱̦̣̓̇̄̓̊́̂̌̈́R̷̢̬̩̲̗̯͚̱̓̂U̸͓̙̦͆̆͊̕P̵̛̟̳͕͊̀̏͗͒͘T̷̤͉̗̪͎͌͊͝ͅ] - III[]]II]][[II]] Ḑ̴̨̦̟̖̜̺̥͈̀̊Ȩ̸͓̪͕͉̰̣͓͋̾L̷̻̤̤̪̞͐E̸̯͓̞̫̲͙̙̘̫̳͆̓͝T̶̹̦̳̭̳̪̂͐͗̕E̶̢̯̯̼͕̪̜͕͝ []]]]II ][[II] ]][[II]
+            I]I[]].
           </p>
-          <form action="#" method="post">
+          <form form onsubmit="corruptlogin(event)">
             <button type="submit">II()[II]]I()[</button>
-            <input type="password" id="[]II[II][[]]-password" required pattern="#" />
+            <input type="password" id="corrupt-password" />
           </form>
         </div>
         <!--Template Card-->
@@ -92,7 +92,7 @@
           </p>
           <form action="#" method="post">
             <button type="submit">CONFIRM</button>
-            <input type="password" id="password" required pattern="#" />
+            <input type="password" id="-template-password" />
           </form>
         </div>
         <!--End of Cards-->
