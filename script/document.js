@@ -1,7 +1,7 @@
 document.addEventListener('invalid', (function () {
     return function (e) {
       e.preventDefault();
-      document.getElementById("password").focus();
+      document.getElementsByTagName("input").focus();
     };
   })(), true);
 
@@ -22,4 +22,8 @@ function move() {
       }
     }
   }
+}
+
+function login() {
+  const password = document.getElementById('password')
 }
