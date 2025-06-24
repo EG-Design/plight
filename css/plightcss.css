@@ -9,6 +9,20 @@
   --secondary-color: #010101;
 }
 
+a,
+button,
+input:focus {
+  outline: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border: var(--primary-color) solid 0.1rem;
+}
+
 /* OVERVIEW
   Body and Text
   Header
@@ -35,8 +49,8 @@ a {
   display: block;
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 
 ::-moz-selection {
@@ -57,13 +71,13 @@ p {
 
 .xl-text {
   font-weight: 900;
-  margin: 5px 0px 0px ;
+  margin: 5px 0px 0px;
   font-size: 1.7rem;
 }
 
 .l-text {
   font-weight: 700;
-  margin: 1px 0px 0px ;
+  margin: 1px 0px 0px;
   font-size: 1.3rem;
 }
 
@@ -71,25 +85,22 @@ p {
 
 header {
   background-color: var(--secondary-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 0.5rem;
   width: 100%;
 }
 
-header ul{
+header ul {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
 header ul li a,
-header ul li p{
+header ul li p {
   padding: 0.3rem;
 }
 
-header ul li a:hover{
+header ul li a:hover {
   color: var(--secondary-color);
   background: var(--primary-color);
 }
@@ -115,9 +126,9 @@ section {
 .databank {
   padding: 1rem;
   display: flex;
+  gap: 0.7rem;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
 }
 
 .data {
@@ -136,11 +147,11 @@ aside {
   height: fit-content;
 }
 
-aside a{
+aside a {
   padding: 0.5rem;
 }
 
-aside a:hover{
+aside a:hover {
   font-weight: 500;
 }
 
@@ -166,10 +177,6 @@ button:hover {
   background-color: var(--primary-color);
 }
 
-input:focus {
-  outline: none;
-}
-
 input::-ms-reveal {
   display: none;
 }
@@ -182,11 +189,14 @@ input::-ms-reveal {
   border: var(--primary-color) solid;
   height: 160px;
   width: 32rem;
-  margin: 0.5rem;
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.card:hover {
+  scale: 0.98;
 }
 
 /* Loading Bar */
@@ -356,7 +366,7 @@ input::-ms-reveal {
 }
 
 @media (max-width: 1072px) {
-  aside{
+  aside {
     width: 50rem;
     padding: 0.5rem;
     margin-bottom: 0.5rem;
@@ -364,7 +374,7 @@ input::-ms-reveal {
 }
 
 @media (min-width: 1073px) {
-  aside{
+  aside {
     margin: 0 0.5rem;
   }
 }
