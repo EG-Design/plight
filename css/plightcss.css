@@ -15,8 +15,15 @@ button,
 label,
 textarea,
 option,
+select,
 input {
   outline: transparent;
+}
+
+textarea {
+  resize: none;
+  overflow: auto;
+  box-shadow: none;
 }
 
 ::-webkit-scrollbar {
@@ -105,6 +112,7 @@ label {
 
 button,
 select,
+option,
 textarea,
 input {
   background-color: var(--tertiary-color);
@@ -241,51 +249,83 @@ aside a:hover {
 
 /* Typewriter Text */
 
-.typewriter-text-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
+.typewriter-text {
+  width: 280px;
 }
 
 .typewriter-text p {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid var(--primary-color); /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  letter-spacing: 0.15em; /* Adjust as needed */
+  overflow: hidden;
+  border-right: 0.15em solid var(--primary-color);
+  font-size: 1rem;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
 }
 
 .typewriter-text p:nth-child(1) {
-  width: 13.7em;
+  width: 13.5em;
+  animation: type 1.5s steps(20, end);
   animation-fill-mode: forwards;
-  animation: typing 1.5s steps(20, end), blink 0.75s step-end infinite;
 }
 
 .typewriter-text p:nth-child(2) {
+  width: 17.2em;
+  opacity: 0;
+  animation: type2 1.5s steps(20, end);
+  animation-delay: 3s;
   animation-fill-mode: forwards;
-  animation: typing 2s steps(20, end), blink 0.75s step-end infinite;
 }
 
 .typewriter-text p:nth-child(3) {
+  width: 13.7em;
+  opacity: 0;
+  animation: type3 1.5s steps(20, end), blink 0.5s step-end infinite alternate;
+  animation-delay: 5.5s;
   animation-fill-mode: forwards;
-  animation: typing 2s steps(20, end), blink 0.75s step-end infinite;
 }
 
-@keyframes typing {
-  from {
+@keyframes type {
+  0% {
     width: 0;
   }
-  to {
-    width: 100%;
+  99.9% {
+    border-right: 0.15em solid var(--primary-color);
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 0.15em solid var(--primary-color);
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
 @keyframes blink {
-  from,
-  to {
-    border-color: transparent;
-  }
   50% {
-    border-color: var(--primary-color);
+    border-color: transparent;
   }
 }
 
