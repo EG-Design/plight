@@ -7,11 +7,15 @@
 :root {
   --primary-color: #f04a41;
   --secondary-color: #010101;
+  --tertiary-color: #111;
 }
 
 a,
 button,
-input:focus {
+label,
+textarea,
+option,
+input {
   outline: transparent;
 }
 
@@ -23,14 +27,31 @@ input:focus {
   border: var(--primary-color) solid 0.1rem;
 }
 
+::-webkit-scrollbar-thumb:hover {
+  border: var(--primary-color) dashed 0.1rem;
+}
+
+::-moz-selection {
+  color: var(--secondary-color);
+  background: var(--primary-color);
+}
+
+::selection {
+  color: var(--secondary-color);
+  background: var(--primary-color);
+}
+
 /* OVERVIEW
-  Body and Text
+  Remove defaults
+  Utility
+  Buttons/Inputs/Etc
   Header
-  Divs, Sections, and Asides
-  Forms, Buttons and Cards
+  Sections/Asides/Etc
   Loading Bar
   Typewriter Text
+  Loading Bar
   CRT effect
+  Media Queries
 */
 
 body,
@@ -53,16 +74,6 @@ ul {
   list-style: none;
 }
 
-::-moz-selection {
-  color: var(--secondary-color);
-  background: var(--primary-color);
-}
-
-::selection {
-  color: var(--secondary-color);
-  background: var(--primary-color);
-}
-
 p {
   padding: 0rem;
   margin: 0;
@@ -79,6 +90,41 @@ p {
   font-weight: 700;
   margin: 1px 0px 0px;
   font-size: 1.3rem;
+}
+
+/* Buttons/Inputs/Etc */
+
+label {
+  display: block;
+  margin-top: 1.2rem;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+button,
+select,
+textarea,
+input {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 2px;
+  padding: 0.3rem 0.5rem;
+  font-family: "industry", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+input::-ms-reveal {
+  display: none;
 }
 
 /* Header */
@@ -105,7 +151,16 @@ header ul li a:hover {
   background: var(--primary-color);
 }
 
-/* Divs, Sections, etc */
+header ul li div {
+  float: right;
+}
+
+header ul li:nth-child(1),
+header ul li:nth-child(3) {
+  width: 30%;
+}
+
+/* Sections/Asides/Etc */
 
 section {
   width: 50rem;
@@ -155,36 +210,6 @@ aside a:hover {
   font-weight: 500;
 }
 
-/* Forms, Buttons and Cards */
-
-button,
-input {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  border-style: solid;
-  border-color: var(--primary-color);
-  margin-left: 0.5rem;
-  padding: 0.2rem 0.4rem;
-  float: right;
-  font-family: "industry", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1rem;
-}
-
-button:hover {
-  color: var(--secondary-color);
-  background-color: var(--primary-color);
-}
-
-input::-ms-reveal {
-  display: none;
-}
-
-.form {
-  float: right;
-}
-
 .card {
   border: var(--primary-color) solid;
   height: 160px;
@@ -196,7 +221,7 @@ input::-ms-reveal {
 }
 
 .card:hover {
-  scale: 0.98;
+  background: var(--tertiary-color);
 }
 
 /* Loading Bar */
@@ -364,6 +389,8 @@ input::-ms-reveal {
   background-size: 100% 2px, 3px 100%;
   pointer-events: none;
 }
+
+/* Media Queries */
 
 @media (max-width: 1072px) {
   aside {
