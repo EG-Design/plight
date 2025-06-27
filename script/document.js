@@ -106,6 +106,8 @@ function templatelogin(event) {
   }
 }
 
+// AES Encryption/Decryption
+
 async function getKey(password, salt) {
         const enc = new TextEncoder();
         const keyMaterial = await window.crypto.subtle.importKey(
