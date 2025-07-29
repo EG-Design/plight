@@ -1,3 +1,22 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $input = $_POST['overview-password'] ?? '';
+    $correctPassword = "4430971";
+    if ($input === $correctPassword) {
+        header(header: "Location: 4430971-overview.html");
+        exit();
+    } else {
+        $error = "Incorrect password.";
+    }
+}
+?>
+<!-- Your HTML form -->
+<form method="POST" action="">
+    <input type="password" name="overview-password" required>
+    <button type="submit">Login</button>
+    <?php if (!empty($error)) echo "<p>$error</p>"; ?>
+</form>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
