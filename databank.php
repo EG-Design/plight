@@ -84,7 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </p>
         <form method="POST" action="">
           <button type="submit">CONFIRM</button>
-          <input type="password" id="overview-password" />
+          <input type="password" id="overview-password" name="overview-password"/>
         </form>
       </div>
       <!--Universe Card-->
