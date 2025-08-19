@@ -84,7 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </p>
         <form method="POST" action="">
           <button type="submit">CONFIRM</button>
-          <input type="password" id="overview-password" name="overview-password"/>
+          <input type="password" name="overview-password" />
         </form>
       </div>
       <!--Universe Card-->
@@ -96,7 +96,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </p>
         <form method="POST" action="">
           <button type="submit">CONFIRM</button>
-          <input type="password" id="universe-password" />
+          <input type="password" name="universe-password" />
         </form>
       </div>
       <!--Factions Card-->
@@ -107,7 +107,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </p>
         <form method="POST" action="">
           <button type="submit">CONFIRM</button>
-          <input type="password" id="factions-password" />
+          <input type="password" name="factions-password" />
         </form>
       </div>
       <!--Map Card-->
@@ -119,7 +119,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </p>
         <form method="POST" action="">
           <button type="submit">CONFIRM</button>
-          <input type="password" id="map-password" />
+          <input type="password" name="map-password" />
         </form>
       </div>
       <!-- Corrupt Card-->
@@ -133,7 +133,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </p>
         <form method="POST" action="">
           <button type="submit">II()[II]]I()[</button>
-          <input type="password" id="corrupt-password" />
+          <input type="password" name="corrupt-password" />
         </form>
       </div>
       <!--Magic Card-->
@@ -144,7 +144,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </p>
         <form method="POST" action="">
           <button type="submit">CONFIRM</button>
-          <input type="password" id="template-password" />
+          <input type="password" name="template-password" />
         </form>
       </div>
       <!--Template Card-->
@@ -156,7 +156,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </p>
         <form method="POST" action="">
           <button type="submit">CONFIRM</button>
-          <input type="password" id="template-password" />
+          <input type="password" name="template-password" />
         </form>
       </div>
       <!--Template Card-->
@@ -168,7 +168,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </p>
         <form method="POST" action="">
           <button type="submit">CONFIRM</button>
-          <input type="password" id="template-password" />
+          <input type="password" name="template-password" />
         </form>
       </div>
       <!--Template Card-->
@@ -180,7 +180,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </p>
         <form method="POST" action="">
           <button type="submit">CONFIRM</button>
-          <input type="password" id="template-password" />
+          <input type="password" name="template-password" />
         </form>
       </div>
       <!--Template Card-->
@@ -192,7 +192,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </p>
         <form method="POST" action="">
           <button type="submit">CONFIRM</button>
-          <input type="password" id="template-password" />
+          <input type="password" name="template-password" />
         </form>
       </div>
       <!--Template Card-->
@@ -204,7 +204,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </p>
         <form method="POST" action="">
           <button type="submit">CONFIRM</button>
-          <input type="password" id="template-password" />
+          <input type="password" name="template-password" />
         </form>
       </div>
       <!--End of Cards-->
