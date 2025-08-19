@@ -100,7 +100,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       </div>
       <!--Lore Card-->
       <div class="card">
-        <h2 class="l-text">FACTIONS:</h2>
+        <h2 class="l-text">INFORMATION:</h2>
         <p>
           PLIGHT file storage v2.03
         </p>
@@ -124,7 +124,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <div class="card">
         <h2 class="l-text">OVERVIEW:</h2>
         <p>
-          . . .
+          PLIGHT basic overview v1.0
         </p>
         <form method="POST" action="">
           <button type="submit">CONFIRM</button>
