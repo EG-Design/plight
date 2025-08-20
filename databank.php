@@ -79,7 +79,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <div class="card">
         <h2 class="l-text">ENCRYPTION:</h2>
         <p>
-          PLIGHT standard encryption v1.06
+          Standard encryption v1.06
         </p>
         <form method="POST" action="">
           <button type="submit">CONFIRM</button>
@@ -90,7 +90,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <div class="card">
         <h2 class="l-text">[]II[II][[]]:</h2>
         <p>
-          []]II[]] [Ċ̶̢̥̬̬͎̹̭̏͜ͅO̸̡̧̬͎̻̼̘̙̔̒͋̔̽ͅR̴̡̙̱̦̣̓̇̄̓̊́̂̌̈́R̷̢̬̩̲̗̯͚̱̓̂U̸͓̙̦͆̆͊̕P̵̛̟̳͕͊̀̏͗͒͘T̷̤͉̗̪͎͌͊͝ͅ] III[]]I ][[II]]
+          []]II[]] [Ċ̶̢̥̬̬͎̹̭̏͜ͅO̸̡̧̬͎̻̼̘̙̔̒͋̔̽ͅR̴̡̙̱̦̣̓̇̄̓̊́̂̌̈́R̷̢̬̩̲̗̯͚̱̓̂U̸͓̙̦͆̆͊̕P̵̛̟̳͕͊̀̏͗͒͘T̷̤͉̗̪͎͌͊͝ͅ] III[]]I
+          ][[II]]
           Ḑ̴̨̦̟̖̜̺̥͈̀̊Ȩ̸͓̪͕͉̰̣͓͋̾L̷̻̤̤̪̞͐E̸̯͓̞̫̲͙̙̘̫̳͆̓͝T̶̹̦̳̭̳̪̂͐͗̕E̶̢̯̯̼͕̪̜͕͝ []]]]II ][[II
         </p>
         <form method="POST" action="">
@@ -102,7 +103,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <div class="card">
         <h2 class="l-text">INFORMATION:</h2>
         <p>
-          PLIGHT file storage v2.03
+          File storage v2.03
         </p>
         <form method="POST" action="">
           <button type="submit">CONFIRM</button>
@@ -113,7 +114,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <div class="card">
         <h2 class="l-text">MAP:</h2>
         <p>
-          PLIGHT system map v1.78
+          System map v1.78
         </p>
         <form method="POST" action="">
           <button type="submit">CONFIRM</button>
@@ -124,18 +125,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <div class="card">
         <h2 class="l-text">OVERVIEW:</h2>
         <p>
-          PLIGHT basic overview v1.0
+          Basic overview v1.0
         </p>
         <form method="POST" action="">
           <button type="submit">CONFIRM</button>
-          <input type="password" id="overview-password" name="overview-password"/>
+          <input type="password" id="overview-password" name="overview-password" />
         </form>
       </div>
       <!--Space Battle Card-->
       <div class="card">
         <h2 class="l-text">COMBAT SIM:</h2>
         <p>
-          PLIGHT experimental combat simulator v0.21
+          Experimental combat simulator v0.21
         </p>
         <form method="POST" action="">
           <button type="submit">CONFIRM</button>
@@ -146,7 +147,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <div class="card">
         <h2 class="l-text">TERMINAL:</h2>
         <p>
-          PLIGHT standard terminal interface v1.31
+          Standard terminal interface v1.31
         </p>
         <form method="POST" action="">
           <button type="submit">CONFIRM</button>
