@@ -154,10 +154,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           <input type="password" id="terminal-password" />
         </form>
       </div>
+      <!--Timeline Card-->
+      <div class="card">
+        <h2 class="l-text">TIMELINE:</h2>
+        <p>
+          Timeline data v3.55?
+        </p>
+        <form method="POST" action="">
+          <button type="submit">CONFIRM</button>
+          <input type="password" id="timeline-password" />
+        </form>
+      </div>
       <!--End of Cards-->
     </div>
   </main>
 </body>
 <script src="script/document.js"></script>
-
 </html>

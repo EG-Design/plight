@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/plightcss.css" />
     <link rel="stylesheet" href="https://use.typekit.net/ayr5udo.css" />
     <link rel="icon" href="images/plightIcon.ico" />
-    <title>Plight-Universe</title>
+    <title>Plight-Information</title>
   </head>
   <header>
     <ul>
@@ -22,18 +22,16 @@
     </ul>
   </header>
   <body class="crt">
-    <main class="data">
-      <!--Aside Nav-->
-      <aside>
-        <a href="#">PLACEHOLDER</a>
-        <a href="#">PLACEHOLDER</a>
-        <a href="#">PLACEHOLDER</a>
-      </aside>
-      <!--Main Page-->
-      <section>
-        <h1 class="xl-text" id="id">Test</h1>
-        <p>Placeholder.</p>
-      </section>
+    <main>
+        <p>
+            Technologies
+            Factions
+            Systems & Planets
+            Races
+            Environment, creatures, weather, etc
+            Malefactors
+            History/Notable characters
+        </p>
     </main>
     <script src="script/document.js"></script>
   </body>
